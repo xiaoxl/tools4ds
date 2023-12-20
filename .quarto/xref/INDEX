@@ -1,0 +1,26 @@
+{
+  "contents/pyconcepts/concepts.qmd": {
+    "concepts.html": "700b6a80"
+  },
+  "index.qmd": {
+    "index.html": "400b7a95"
+  },
+  "contents/pyconcepts/setup.qmd": {
+    "setup.html": "ec016a93"
+  },
+  "contents/pyconcepts/path.qmd": {
+    "path.html": "4f5d3ca4"
+  },
+  "contents/pyconcepts/virtenv.qmd": {
+    "virtenv.html": "f34c7de0"
+  },
+  "contents/rconcepts/r.qmd": {
+    "r.html": "a6f83f53"
+  },
+  "contents/tools/re.qmd": {
+    "re.html": "b2f06c7b"
+  },
+  "contents/references.qmd": {
+    "references.html": "db235f16"
+  }
+}
