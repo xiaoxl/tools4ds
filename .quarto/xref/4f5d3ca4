@@ -1,1 +1,1 @@
-{"headings":["sec-path"],"entries":[{"key":"sec-path","order":{"number":1,"section":[2,0,0,0,0,0,0]},"caption":"2  Environemnt Variable PATH"}],"options":{"labels":"arabic","chapter-id":"sec-path","chapters":true,"subref-labels":"roman i"}}
+{"entries":[{"key":"sec-path","caption":"2  Environemnt Variable PATH","order":{"section":[2,0,0,0,0,0,0],"number":1}}],"headings":["sec-path"],"options":{"chapter-id":"sec-path","chapters":true,"labels":"arabic","subref-labels":"roman i"}}

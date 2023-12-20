@@ -63,7 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/references.html" rel="next">
 <link href="../../contents/rconcepts/r.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -217,12 +216,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../contents/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -292,7 +285,7 @@ Note
 </div>
 <div id="exm-p1" class="theorem example">
 <p><span class="theorem-title"><strong>Example 6.1 </strong></span>&nbsp;</p>
-<div id="62546722" class="cell" data-execution_count="1">
+<div id="5bb4d02e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"foo bar</span><span class="ch">\t</span><span class="st"> baz </span><span class="ch">\t</span><span class="st">qux"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>pattern <span class="op">=</span> <span class="st">'\s+'</span></span>
@@ -313,7 +306,7 @@ Note
 <p>We can use <code>()</code> to specify groups, and use <code>.groups()</code> to get access to the results.</p>
 <div id="exm-p2" class="theorem example">
 <p><span class="theorem-title"><strong>Example 6.2 </strong></span>&nbsp;</p>
-<div id="814d4168" class="cell" data-execution_count="2">
+<div id="96dc52bc" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pattern <span class="op">=</span> <span class="vs">r'([A-Z0-9._%+-]+)@([A-Z0-9.-]+)\.([A-Z]{2,4})'</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>regex <span class="op">=</span> re.<span class="bu">compile</span>(pattern, flags<span class="op">=</span>re.IGNORECASE)</span>
@@ -328,11 +321,11 @@ Note
 <p><code>.extract</code> is a method that is not from <code>re</code>. It is used to extract the matched groups and make them as a DataFrame.</p>
 <div id="exm-p3" class="theorem example">
 <p><span class="theorem-title"><strong>Example 6.3 </strong></span>&nbsp;</p>
-<div id="fd2c3da4" class="cell" data-execution_count="3">
+<div id="932e4e41" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>mnames <span class="op">=</span> [<span class="st">'movie_id'</span>, <span class="st">'title'</span>, <span class="st">'genres'</span>]</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>movies <span class="op">=</span> pd.read_table(<span class="st">'../assests/datasets/movies.dat'</span>, sep<span class="op">=</span><span class="st">'::'</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>movies <span class="op">=</span> pd.read_table(<span class="st">'assests/datasets/movies.dat'</span>, sep<span class="op">=</span><span class="st">'::'</span>,</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                       header<span class="op">=</span><span class="va">None</span>, names<span class="op">=</span>mnames, engine<span class="op">=</span><span class="st">"python"</span>,</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                       encoding<span class="op">=</span><span class="st">'ISO-8859-1'</span>)</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
@@ -364,19 +357,19 @@ df = pd.merge(df, dummy, left_index=True, right_index=True)
 </div>
 <div id="exr-m1" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.2 (More regex) </strong></span>Find all words starting with <code>a</code> or <code>e</code> in a given string:</p>
-<div id="9cfa02b9" class="cell" data-execution_count="4">
+<div id="fb5868ce" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"The following example creates an ArrayList with a capacity of 50 elements. Four elements are then added to the ArrayList and the ArrayList is trimmed accordingly."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="exr-m2" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.3 (More regex) </strong></span>Write a Python code to extract year, month and date from a <code>url1</code>:</p>
-<div id="ed9301d6" class="cell" data-execution_count="5">
+<div id="716290c7" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>url1<span class="op">=</span> <span class="st">"https://www.washingtonpost.com/news/football-insider/wp/2016/09/02/odell-beckhams-fame-rests-on-one-stupid-little-ball-josh-norman-tells-author/"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="exr-m3" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.4 (More regex) </strong></span>Please use regex to parse the following str to create a dictionary.</p>
-<div id="0af455e8" class="cell" data-execution_count="6">
+<div id="4c66c09a" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="vs">r'''</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="vs">{</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="vs">    name: Firstname Lastname;</span></span>
@@ -388,7 +381,7 @@ df = pd.merge(df, dummy, left_index=True, right_index=True)
 </div>
 <div id="exr-pp1" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.5 </strong></span>Consider the following DataFrame.</p>
-<div id="530e30c1" class="cell" data-execution_count="7">
+<div id="f23a5a54" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [[<span class="st">'Evert van Dijk'</span>, <span class="st">'Carmine-pink, salmon-pink streaks, stripes, flecks.  Warm pink, clear carmine pink, rose pink shaded salmon.  Mild fragrance.  Large, very double, in small clusters, high-centered bloom form.  Blooms in flushes throughout the season.'</span>],</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>        [<span class="st">'Every Good Gift'</span>, <span class="st">'Red.  Flowers velvety red.  Moderate fragrance.  Average diameter 4".  Medium-large, full (26-40 petals), borne mostly solitary bloom form.  Blooms in flushes throughout the season.'</span>], </span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        [<span class="st">'Evghenya'</span>, <span class="st">'Orange-pink.  75 petals.  Large, very double bloom form.  Blooms in flushes throughout the season.'</span>], </span>
@@ -454,8 +447,8 @@ df = pd.merge(df, dummy, left_index=True, right_index=True)
 </div>
 <div id="exr-pp3" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.7 </strong></span>Please download the <a href="assests/datasets/test_emails.txt">given file</a> with sample emails, and use the following code to load the file and save it to a string <code>content</code>.</p>
-<div id="8396341c" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'../assests/datasets/test_emails.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> f:</span>
+<div id="b0d554ec" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'assests/datasets/test_emails.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> f:</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    content <span class="op">=</span> f.read()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Please use regex to play with <code>content</code>.</p>
@@ -468,7 +461,7 @@ df = pd.merge(df, dummy, left_index=True, right_index=True)
 </div>
 <div id="exr-pp4" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercise 6.8 </strong></span>Extract the valid emails from the series <code>emails</code>. The regex <code>pattern</code> for valid emails is provided as reference.</p>
-<div id="5a674ebb" class="cell" data-execution_count="9">
+<div id="3c1cea94" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>emails <span class="op">=</span> pd.Series([<span class="st">'buying books at amazom.com'</span>,</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'rameses@egypt.com'</span>,</span>
@@ -870,9 +863,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
